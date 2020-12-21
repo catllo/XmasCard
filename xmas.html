@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2020년 한 해를 보내며</title>
+
+  <link rel="shortcut icon"
+    href="https://icons.iconarchive.com/icons/designbolts/free-valentine-heart/256/Heart-icon.png">
+
+  <meta property="og:image"
+    content="https://lh3.googleusercontent.com/proxy/vudKQQGSwUTNHWw76crGfdRuWjtg6FLwTOhOQD-rwZBrEMjJEJgWEeqNRS8wrRBq6DfR3IVc1BRXCS2vlSX6THx-fx3ft7_JHFxS-nUFSBQkHi5mGncrVbldzu2JKoI5VuIDjmZQa5CFK1Qfg1FO9cpXUlNSmWucSWQ-7f5m2TOWcUCxdUn7vokmyDqt60PtVCyAAbUUXBQoLaMlVqKpuTNt9uWw0DuHNFuXUwcZLtepEiRZl7JMaFa3sP-FAH8-R69RXMGtzJC9Q0JJlfNwrTA36lExMWCL_9TZPNLPF9I-CLQomIb6sBvJ1I-etB0CGDIxvqOVXHxGAhRx4g">
+  <meta property="og:title" content="현주의 연말 인삿말 카드">
+  <meta property="og:description" content="2020년 한 해를 보내며">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Poor+Story&display=swap"
+    rel="stylesheet">
+
+  <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+  <style>
+    * {
+      font-family: 'Poor Story', cursive;
+    }
+
+    body {
+      background-color: #9b070f;
+    }
+
+    .envelope {
+      width: 200px;
+      height: 200px;
+
+      background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+      background-size: cover;
+      background-position: center;
+
+      margin: 200px auto 0px auto;
+
+      cursor: pointer;
+    }
+
+    .envelope-msg {
+      color: white;
+      text-align: center;
+    }
+
+    .letter-close {
+      display: block;
+    }
+
+    .letter-open {
+      display: none;
+    }
+
+    .rtan {
+      background-color: white;
+
+      width: 200px;
+      height: 200px;
+
+      background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/Webp.net-gifmaker+(1).gif');
+      background-size: cover;
+      background-position: center;
+
+      margin: 100px auto 0px auto;
+
+      border-radius: 100px;
+
+      border: 5px solid white;
+      box-shadow: 0px 0px 10px 0px white;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .messagebox {
+      background-color: ivory;
+      width: 400px;
+      margin: auto;
+      color: #9b070f;
+      text-align: center;
+      font-size: 20px;
+      padding: 30px;
+      line-height: 30px;
+      box-shadow: 0px 0px 10px 0px white;
+    }
+
+    .from {
+      text-align: right;
+      margin-bottom: 0px;
+    }
+
+    @media screen and (max-width: 760px) {
+      .messagebox {
+        width: 260px;
+        padding: 20px
+      }
+
+      .rtan {
+        width: 150px;
+        height: 150px;
+        margin: 70px auto 0px auto;
+      }
+
+      .envelope {
+        margin: 150px auto 0px auto;
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+  </style>
+</head>
+
+<script>
+
+  function open_letter() {
+    document.getElementsByClassName("letter-close")[0].style.display = 'none'
+    document.getElementsByClassName("letter-open")[0].style.display = 'block'
+  }
+
+  function go_rtan() {
+    alert('새해 복 많이 받으세요~')
+    window.location.href = "https://namu.wiki/w/%EC%83%88%ED%95%B4%20%EB%B3%B5%20%EB%A7%8E%EC%9D%B4%20%EB%B0%9B%EC%9C%BC%EC%84%B8%EC%9A%94"
+  }
+</script>
+
+<body>
+  <div class="letter-close">
+    <div class="envelope" onclick="open_letter()"></div>
+    <h2 class="envelope-msg">편지를 열어보세요!</h2>
+  </div>
+
+  <div class="letter-open">
+    <div class="rtan" onclick="go_rtan()"></div>
+    <h1>2020년 수고 많았습니다!</h1>
+    <div class="messagebox">
+      유난히도 힘들었던 한 해의 마지막 12월, <br />
+      소중한 당신의 12월이 <br />
+      따뜻하고 행복했으면 좋겠습니다. <br />
+      비록 추운날씨지만 <br />
+      언제나 마음만은 따뜻하시길 바라며 <br />
+      즐거운 연말연시 맞이하세요. <br />
+      <p class="from">2020.12.20 현주올림</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
